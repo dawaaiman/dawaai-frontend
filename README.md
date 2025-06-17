@@ -1,2 +1,2 @@
 # Dawaai Frontend
-This is the frontend for dawaai.com.
+A simple medicine search UI for initial demo.
