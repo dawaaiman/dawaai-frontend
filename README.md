@@ -1,2 +1,2 @@
 # Dawaai Frontend
-A simple medicine search UI for initial demo.
+This is the GitHub-ready frontend for Dawaai.com, a global medicine search engine.
