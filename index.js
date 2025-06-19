@@ -1,20 +1,21 @@
 
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Dawaai | Global Medicine Search</title>
-        <meta name="description" content="Search medicines and find where to buy them locally or online" />
+        <title>Dawaai | Medicine Search</title>
+        <meta name="description" content="Search medicines by name and location" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Dawaai</h1>
-        <p className={styles.description}>Search for medicine across the world</p>
-        <input type="text" placeholder="Enter medicine name..." className={styles.searchInput} />
-      </main>
-    </div>
+      <div className={styles.hero}>
+        <h1 className={styles.title}>Find Medicines Globally</h1>
+        <p className={styles.subtitle}>Search and compare availability locally or online</p>
+        <input className={styles.searchBox} placeholder="Enter medicine name..." />
+        <Link href="/search"><button className={styles.searchButton}>Search</button></Link>
+      </div>
+    </>
   )
 }
